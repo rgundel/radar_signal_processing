@@ -30,10 +30,11 @@ The SNR is calculated as:
 $\text{SNR} = \frac{P_r}{P_n}$
 
 Converted to dB:
-$\text{SNR}_{\text{dB}} = 10 \log_{10}(\text{SNR})$
+$SNR_{dB} = 10 \log_{10}(SNR)$
 
 ### SNR in dB as Summation Equation
-$\text{SNR}_{\text{dB}} = P_{t_{\text{dB}}} + G_{t_{\text{dB}}} + G_{r_{\text{dB}}} + 20 \log_{10}(\lambda) + 10 \log_{10}(\sigma) - \text{factor}_{\text{dB}} - 40 \log_{10}(R) - k_{\text{dB}} - T_{0_{\text{dB}}} - F_{\text{dB}} - B_{\text{dB}}$
+$SNR_{dB} = P_{t_{dB}} + G_{t_{dB}} + G_{r_{dB}} + 20 \log_{10}(\lambda) + 10 \log_{10}(\sigma) - factor_{dB} - 40 \log_{10}(R) - k_{dB} - T_{0_{dB}} - F_{dB} - B_{dB}$
+
 
 Where:
 - $P_{t_{\text{dB}}} = 10 \log_{10}(P_t)$
