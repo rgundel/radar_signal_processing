@@ -14,9 +14,7 @@ This repository contains code for various radar range equations and signal-to-no
 ## Content
 
 ### MATLAB Files
-- **ReceivedPower.m**: Calculates the received power of a target using the radar range equation.
-- **ReceiverThermalNoise.m**: Computes the thermal noise power in a radar receiver.
-- **SNR_Calculation.m**: Converts SNR to decibels (dB) and sums up the dB values to get the SNR in dB.
+- **radar_signal_processing.m**: MATLAB code for calculating received power, noise power, and SNR.
 
 ### Python Files
 - **radar_signal_processing.ipynb**: Jupyter Notebook with Python code for calculating received power, noise power, and SNR.
@@ -25,17 +23,17 @@ This repository contains code for various radar range equations and signal-to-no
 
 ### Received Power of a Target
 The received power ($P_r$) is calculated using the radar range equation:
-$$ P_r = \frac{P_t G_t G_r \lambda^2 \sigma}{(4\pi)^3 R^4} $$
+$ P_r = \frac{P_t G_t G_r \lambda^2 \sigma}{(4\pi)^3 R^4} $
 
 ### Signal-to-Noise Ratio (SNR)
 The SNR is calculated as:
-$$ \text{SNR} = \frac{P_r}{P_n} $$
+$ \text{SNR} = \frac{P_r}{P_n} $
 
 Converted to dB:
-$$ \text{SNR}_{\text{dB}} = 10 \log_{10}(\text{SNR}) $$
+$ \text{SNR}_{\text{dB}} = 10 \log_{10}(\text{SNR}) $
 
 ### SNR in dB as Summation Equation
-$$ \text{SNR}_{\text{dB}} = P_{t_{\text{dB}}} + G_{t_{\text{dB}}} + G_{r_{\text{dB}}} + 20 \log_{10}(\lambda) + 10 \log_{10}(\sigma) - \text{factor}_{\text{dB}} - 40 \log_{10}(R) - k_{\text{dB}} - T_{0_{\text{dB}}} - F_{\text{dB}} - B_{\text{dB}} $$
+$ \text{SNR}_{\text{dB}} = P_{t_{\text{dB}}} + G_{t_{\text{dB}}} + G_{r_{\text{dB}}} + 20 \log_{10}(\lambda) + 10 \log_{10}(\sigma) - \text{factor}_{\text{dB}} - 40 \log_{10}(R) - k_{\text{dB}} - T_{0_{\text{dB}}} - F_{\text{dB}} - B_{\text{dB}} $
 
 Where:
 - $P_{t_{\text{dB}}} = 10 \log_{10}(P_t)$
