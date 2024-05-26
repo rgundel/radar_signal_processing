@@ -25,6 +25,10 @@ This repository contains code for various radar range equations and signal-to-no
 The received power ($P_r$) is calculated using the radar range equation:
 $P_r = \frac{P_t G_t G_r \lambda^2 \sigma}{(4\pi)^3 R^4}$
 
+### Noise Power 
+The noise power ($P_n$) is calculated as follows:
+$P_n = k  T_0  F  B$
+
 ### Signal-to-Noise Ratio (SNR)
 The SNR is calculated as:
 $\text{SNR} = \frac{P_r}{P_n}$
@@ -37,17 +41,17 @@ $SNR_{dB} = P_{t_{dB}} + G_{t_{dB}} + G_{r_{dB}} + 20 \log_{10}(\lambda) + 10 \l
 
 
 Where:
-- $P_{t_{\text{dB}}} = 10 \log_{10}(P_t)$
-- $G_{t_{\text{dB}}} = 10 \log_{10}(G_t)$
-- $G_{r_{\text{dB}}} = 10 \log_{10}(G_r)$
+- $P_{t_{dB}} = 10 \log_{10}(P_t)$
+- $G_{t_{dB}} = 10 \log_{10}(G_t)$
+- $G_{r_{dB}} = 10 \log_{10}(G_r)$
 - $20 \log_{10}(\lambda)$ converts the wavelength term to dB
 - $10 \log_{10}(\sigma)$ converts the radar cross-section to dB
-- $\text{factor}_{\text{dB}} = 10 \log_{10}((4 \pi)^3)$
+- $factor_{dB} = 10 \log_{10}((4 \pi)^3)$
 - $40 \log_{10}(R)$ converts the range term to dB
-- $k_{\text{dB}} = 10 \log_{10}(k)$
-- $T_{0_{\text{dB}}} = 10 \log_{10}(T_0)$
-- $F_{\text{dB}} = 10 \log_{10}(F)$
-- $B_{\text{dB}} = 10 \log_{10}(B)$
+- $k_{dB} = 10 \log_{10}(k)$
+- $T_{0_{dB}} = 10 \log_{10}(T_0)$
+- $F_{dB} = 10 \log_{10}(F)$
+- $B_{dB} = 10 \log_{10}(B)$
 
 ## Usage
 
